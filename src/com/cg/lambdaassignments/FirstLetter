@@ -1,1 +1,24 @@
+package com.cg.lambdassignment;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FirstLetter {
+    public static void main(String[] args) {
+        List<String> Names=new ArrayList<>();
+        Names.add("Navya");
+        Names.add("Sahana");
+        Names.add("Pallavi");
+        Names.add("Kavya");
+        Names.add("Pravina");
+
+        StringBuilder result=new StringBuilder();
+        Names.forEach(s ->result.append(s.charAt(0)));
+        System.out.println(result+" ");
+        
+    }
+}
+
+
 
